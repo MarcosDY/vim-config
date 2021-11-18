@@ -3,9 +3,9 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'vim-airline/vim-airline'
-Plug 'ayu-theme/ayu-vim'
+" Plug 'ayu-theme/ayu-vim'
+Plug 'morhetz/gruvbox'
 Plug 'kien/ctrlp.vim'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'preservim/nerdcommenter'
@@ -20,6 +20,8 @@ let g:go_metalinter_autosave = 1
 let g:go_metalinter_command = "golangci-lint"
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_deadline = '20s'
+" let go_metalinter_autosave_enabled = 1
+" let g:go_metalinter_enabeld = ['deadcode', 'errcheck', 'gosimple', 'govet', 'staticcheck', 'typecheck', 'unused', 'varcheck']
 let g:go_list_type = 'quickfix'
 " prevents jump to error
 let g:go_jump_to_error = 0
@@ -30,7 +32,7 @@ let g:go_fmt_command = "goimports"
 let g:go_def_mapping_enabled = 0
 
 " Set indentation characters
-set list listchars=tab:▸\ ,trail:·,precedes:←,extends:→
+set list listchars=tab:‚ñ∏\ ,trail:¬∑,precedes:‚Üê,extends:‚Üí
 
 " Set numbers
 set number
@@ -194,7 +196,11 @@ let g:NERDSpaceDelims = 1
 
 set autowrite
 " Enable true colors support
-set termguicolors     
-let ayucolor="dark"
-colorscheme ayu
+" set termguicolors     
+" let ayucolor="dark"
+" colorscheme ayu
+
+set background=dark
+colorscheme gruvbox
+
 
